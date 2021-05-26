@@ -8,10 +8,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class CreateOpportunity {
+public class Verify_CreateOpportunity {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
@@ -32,7 +31,8 @@ public class CreateOpportunity {
 		driver.findElementByXPath("//div[text()='New']").click();
 		WebElement name = driver.findElementByXPath("//input[@name='Name']");
 		name.sendKeys("Salesforce Automation by Priya");
-		driver.findElementByXPath("//input[@name='CloseDate']").sendKeys("5/8/2021");
+		driver.findElementByXPath("//input[@name='CloseDate']").click();
+		driver.findElementByXPath("//button[text()='Today']").click();
 		driver.findElementByXPath("(//input[@aria-haspopup='listbox'])[3]").click();
 		Thread.sleep(3000);
 		driver.findElementByXPath("//lightning-base-combobox-item[@data-value= 'Needs Analysis']").click();
@@ -47,4 +47,7 @@ public class CreateOpportunity {
 			}
 	}
 }
+
+
+
 

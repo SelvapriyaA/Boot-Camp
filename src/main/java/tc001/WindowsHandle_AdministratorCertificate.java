@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AdministratorCertifications {
+public class WindowsHandle_AdministratorCertificate {
 
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
@@ -48,9 +48,11 @@ public class AdministratorCertifications {
 		if(!mainwindow.equalsIgnoreCase(childwindow2) && !first_tab.equalsIgnoreCase(childwindow2))
 		driver.switchTo().window(childwindow2);
 		}
-		List<WebElement> certificationlist= driver.findElementsByXPath("//div[contains(@class,'slds-container--center')]/child::script");
+		System.out.println("****List of certificates****");
+		List<WebElement> certificationlist= driver.findElementsByXPath("//div[contains(@class,'cs-card')]/child::div[contains(@class,'Fz')]/a[contains(@href,'/credentials/')]");
 		for(int i=0;i<certificationlist.size();i++)
 			System.out.println(certificationlist.get(i).getText());
+		System.out.println();
 		
 		String administrator = driver.findElementByXPath("//a[@href='/credentials/administrator']").getText(); 
 		System.out.println(administrator);
@@ -59,12 +61,17 @@ public class AdministratorCertifications {
 		else{                                                     
 			System.out.println("The certificate is not available");
 		}
+		
 		driver.findElementByXPath("//a[text()='Administrator']").click();
-		System.out.println("Classes and Workshops");
-		String workshop = driver.findElementByXPath("//*[@id=\"main-wrapper\"]/main/main/div[4]/div/div[2]/div[10]/div/ul").getText();
+		System.out.println();
+		System.out.println("****Classes and Workshops****");
+		String workshop = driver.findElementByXPath("//*//div[contains(@class,'Maw(50rem)')]/child::div[contains(@class,'cs-box-2')]/ul").getText();
 		System.out.println(workshop);
 		String title = driver.getTitle();
+		System.out.println();
 		System.out.println(title);
+		
+		System.out.println();
 		if(title.contains("Administrator"))
 			System.out.println("The title matches");
 		else {
@@ -72,3 +79,7 @@ public class AdministratorCertifications {
 		}
 		}
 		}
+
+
+
+
