@@ -11,6 +11,7 @@
 				<include name="Sales" ></include>
 			</run>
 		</groups>
+		
 		<classes>
 			<class name="TestNG.ViewAll" >
 			<methods>

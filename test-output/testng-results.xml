@@ -1,50 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="46" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+  <suite name="Default suite" duration-ms="180" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
     <groups>
       <group name="a">
-        <method signature="SampleProgram.deleteProfile()[pri:2, instance:TestNG.SampleProgram@6f195bc3]" name="deleteProfile" class="TestNG.SampleProgram"/>
-        <method signature="SampleProgram.firstname()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="firstname" class="TestNG.SampleProgram"/>
-        <method signature="SampleProgram.setProfilePic()[pri:1, instance:TestNG.SampleProgram@6f195bc3]" name="setProfilePic" class="TestNG.SampleProgram"/>
+        <method signature="SampleProgram.deleteProfile()[pri:2, instance:TestNG.SampleProgram@467aecef]" name="deleteProfile" class="TestNG.SampleProgram"/>
+        <method signature="SampleProgram.firstname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="firstname" class="TestNG.SampleProgram"/>
+        <method signature="SampleProgram.reloadPage()[pri:3, instance:TestNG.SampleProgram@467aecef]" name="reloadPage" class="TestNG.SampleProgram"/>
+        <method signature="SampleProgram.setProfilePic()[pri:1, instance:TestNG.SampleProgram@467aecef]" name="setProfilePic" class="TestNG.SampleProgram"/>
       </group> <!-- a -->
+      <group name="b">
+        <method signature="SampleProgram.reloadPage()[pri:3, instance:TestNG.SampleProgram@467aecef]" name="reloadPage" class="TestNG.SampleProgram"/>
+      </group> <!-- b -->
+      <group name="c">
+        <method signature="SampleProgram.signOut()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="signOut" class="TestNG.SampleProgram"/>
+      </group> <!-- c -->
     </groups>
-    <test name="Test" duration-ms="46" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+    <test name="Default test" duration-ms="180" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
       <class name="TestNG.SampleProgram">
-        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="createAccount" is-config="true" duration-ms="2" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="setUp" is-config="true" duration-ms="23" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openUrl()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="openUrl" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method status="PASS" signature="goToMail()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="goToMail" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToMail -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="firstname()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="firstname" duration-ms="3" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="firstname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="firstname" duration-ms="15" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstname -->
-        <test-method status="PASS" signature="setProfilePic()[pri:1, instance:TestNG.SampleProgram@6f195bc3]" name="setProfilePic" duration-ms="1" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="signOut()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="signOut" duration-ms="4" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signOut -->
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="2" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="2" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="setProfilePic()[pri:1, instance:TestNG.SampleProgram@467aecef]" name="setProfilePic" duration-ms="8" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setProfilePic -->
-        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="createAccount" is-config="true" duration-ms="0" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="createAccount" is-config="true" duration-ms="1" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="2" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@6f195bc3]" name="createAccount" is-config="true" duration-ms="1" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAccount -->
-        <test-method status="PASS" signature="deleteProfile()[pri:2, instance:TestNG.SampleProgram@6f195bc3]" name="deleteProfile" duration-ms="0" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="deleteProfile()[pri:2, instance:TestNG.SampleProgram@467aecef]" name="deleteProfile" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProfile -->
-        <test-method status="PASS" signature="deleteProfile()[pri:2, instance:TestNG.SampleProgram@6f195bc3]" name="deleteProfile" duration-ms="1" started-at="2021-05-23T20:41:01 IST" finished-at="2021-05-23T20:41:01 IST">
+        <test-method status="PASS" signature="deleteProfile()[pri:2, instance:TestNG.SampleProgram@467aecef]" name="deleteProfile" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProfile -->
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="createAccount" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="reloadPage()[pri:3, instance:TestNG.SampleProgram@467aecef]" name="reloadPage" duration-ms="2" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reloadPage -->
+        <test-method status="PASS" signature="lastname()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="lastname" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname -->
+        <test-method status="PASS" signature="emailID()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="emailID" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailID -->
+        <test-method status="PASS" signature="retypeEmailID()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="retypeEmailID" is-config="true" duration-ms="1" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retypeEmailID -->
+        <test-method status="PASS" signature="submit()[pri:0, instance:TestNG.SampleProgram@467aecef]" name="submit" is-config="true" duration-ms="0" started-at="2021-05-27T19:57:37 IST" finished-at="2021-05-27T19:57:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submit -->
       </class> <!-- TestNG.SampleProgram -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
